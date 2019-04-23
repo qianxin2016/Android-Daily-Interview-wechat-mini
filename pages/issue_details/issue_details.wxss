@@ -24,11 +24,6 @@
   color: #ffffff;
 }
 
-.avatar {
-  width: 80%;
-  height: 80%;
-}
-
 .replier {
   font-size: 20rpx;
 }

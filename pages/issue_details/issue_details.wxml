@@ -1,6 +1,6 @@
 <import src="../../towxml/entry.wxml"/>
 <view class="container comment-list">
-  <view class="comment" wx:for="{{comments}}" wx:for-item="comment">
+  <view class="comment" wx:for="{{comments}}" wx:for-item="comment" wx:key="{{index}}">
     <view class="top">
       <text class="replier">{{comment.replier}}</text>
       <text class="time">{{comment.time}}</text>

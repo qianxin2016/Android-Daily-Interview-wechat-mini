@@ -1,0 +1,18 @@
+<view class="container issue-list">
+  <view
+    class="issue"
+    wx:for="{{issues}}"
+    wx:for-item="issue"
+    wx:key="{{issue.number}}">
+    <view class="left" id="{{issue.number}}" bindtap="showDetails">
+      <view class="header">
+        <view class="time">{{issue.time}}</view>
+        <view class="author">raised by {{issue.author}}</view>
+      </view>
+      <view class="title">{{issue.title}}</view>
+    </view>
+    <view class="right">
+      <view>></view>
+    </view>
+  </view>
+</view>

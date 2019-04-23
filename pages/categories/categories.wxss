@@ -1,0 +1,85 @@
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.category {
+  max-width: 40%;
+  flex: 0 0 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #33333333;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 5rpx 10rpx #0e0c0d;
+  opacity: 0.9;
+}
+
+.top {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.label {
+  flex: 1;
+  font-size: 30rpx;
+  color: #ffffff;
+  margin-left: 30rpx;
+}
+
+.bottom {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.issue-count {
+  font-size: 40rpx;
+  font-family: bold;
+  color: #ffffff;
+  margin-left: 30rpx;
+}
+
+.issue-unit {
+  font-size: 28rpx;
+  color: #ffffff;
+  margin-left: 10rpx;
+}
+
+.tag-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 30rpx;
+}
+
+.tag {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.left-item {
+  margin-left: 7%;
+  margin-right: 2%;
+}
+
+.right-item {
+  margin-left: 2%;
+  margin-right: 7%;
+}

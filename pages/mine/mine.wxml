@@ -1,0 +1,6 @@
+<view class="container mine">
+  <view>分享给朋友</view>
+  <view>意见与反馈</view>
+  <view>关于作者</view>
+  <view>版本更新历史</view>
+</view>

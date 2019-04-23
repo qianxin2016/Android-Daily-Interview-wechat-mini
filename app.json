@@ -1,12 +1,38 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/issues/issues",
+    "pages/issue_details/issue_details",
+    "pages/categories/categories",
+    "pages/category_details/category_details",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "AndroidDailyInterview",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor": "#83c6c2",
+    "list": [
+      {
+        "pagePath": "pages/issues/issues",
+        "text": "每日一题",
+        "iconPath": "images/issue_list.png",
+        "selectedIconPath": "images/issue_list_highlight.png"
+      },
+      {
+        "pagePath": "pages/categories/categories",
+        "text": "分类突破",
+        "iconPath": "images/issue_category.png",
+        "selectedIconPath": "images/issue_category_highlight.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_highlight.png"
+      }
+    ]
   }
 }

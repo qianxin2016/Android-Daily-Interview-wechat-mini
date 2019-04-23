@@ -1,0 +1,22 @@
+<view class="container categories">
+  <view
+    wx:for="{{categories}}"
+    wx:for-index="idx"
+    wx:for-item="category"
+    wx:key="{{category.label}}"
+    id="{{category.label}}"
+    class="category {{idx % 2 === 0 ? 'left-item' : 'right-item'}}"
+    style="background-color: {{category.color}}"
+    bindtap="showCategory">
+    <view class="top">
+      <text class="label">{{category.label}}</text>
+    </view>
+    <view class="bottom">
+      <text class="issue-count">{{category.issues.length}}</text>
+      <text class='issue-unit'>题</text>
+      <view class="tag-container">
+        <image class="tag" src="../../images/tag.png" />
+      </view>
+    </view>
+  </view>
+</view>

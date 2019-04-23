@@ -1,4 +1,8 @@
-.item {
+.issue-list {
+  padding-top: 30rpx;
+}
+
+.issue {
   display: flex;
   flex-direction: row;
   width: 90%;
