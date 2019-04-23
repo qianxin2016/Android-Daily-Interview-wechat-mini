@@ -1,0 +1,42 @@
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.comment {
+  width: 100%;
+  border: 1rpx solid #33333333;
+  margin-bottom: 40rpx;
+  box-shadow: 0rpx 5rpx 10rpx #0e0c0d;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #b4e7e6;
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  color: #ffffff;
+}
+
+.avatar {
+  width: 80%;
+  height: 80%;
+}
+
+.replier {
+  font-size: 20rpx;
+}
+
+.time {
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+
+.bottom {
+  font-size: 26rpx;
+  padding: 30rpx;
+}
