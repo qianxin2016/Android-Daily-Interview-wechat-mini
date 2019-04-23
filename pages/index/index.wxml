@@ -1,4 +1,3 @@
-<!--index.wxml-->
 <view class="container">
   <view class="item" wx:for="{{issues}}" wx:key="{{item.number}}">
     <view class="left" id="{{item.number}}" bindtap="showDetails">

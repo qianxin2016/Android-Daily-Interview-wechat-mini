@@ -1,6 +1,7 @@
-//logs.js
 const app = getApp()
-const util = require('../../utils/util.js')
+
+const Towxml = require('../../towxml/main')
+const towxml = new Towxml()
 
 Page({
   data: {
@@ -13,11 +14,13 @@ Page({
       success: res => {
         var comments = []
         for (var i = 0; i < res.data.length; i++) {
+          var content = towxml.toJson(res.data[i].body, 'markdown')
+          content.theme = 'main'
           comments[i] = {
             replier: res.data[i].user.login,
             avatar: res.data[i].user.avatar_url,
             time: res.data[i].created_at.substring(0, 10),
-            content: res.data[i].body
+            content
           }
         }
 

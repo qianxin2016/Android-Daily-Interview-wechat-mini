@@ -1,3 +1,5 @@
+@import '/towxml/style/main.wxss';
+
 .comment-list {
   display: flex;
   flex-direction: column;

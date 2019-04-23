@@ -1,10 +1,10 @@
-<!--logs.wxml-->
+<import src="../../towxml/entry.wxml"/>
 <view class="container comment-list">
   <view class="comment" wx:for="{{comments}}" wx:for-item="comment">
     <view class="top">
       <text class="replier">{{comment.replier}}</text>
       <text class="time">{{comment.time}}</text>
     </view>
-    <view class="bottom">{{comment.content}}</view>
+    <template is="entry" data="{{...comment.content}}"/>
   </view>
 </view>
