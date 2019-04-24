@@ -15,9 +15,11 @@ Page({
     }
   },
   mapToArray: (issues) => {
-    return Object.keys(issues).map(
+    var arr = Object.keys(issues).map(
       number => { return issues[number] }
     )
+    arr.sort((a, b) => { return b.number - a.number })
+    return arr
   },
   showDetails: (e) => {
     wx.navigateTo({
