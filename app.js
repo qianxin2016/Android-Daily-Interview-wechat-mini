@@ -47,7 +47,7 @@ App({
     })
   },
   globalData: {
-    GITHUB_URL: 'https://api.github.com/repos/Moosphan/Android-Daily-Interview/issues',
+    GITHUB_URL: 'https://api.github.com/repos/Moosphan/Android-Daily-Interview/issues?per_page=20&page=1',
     issues: [],
     categories: {}
   }

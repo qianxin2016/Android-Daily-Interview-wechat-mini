@@ -17,10 +17,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1rpx solid #33333333;
-  border-radius: 20rpx;
-  box-shadow: 0rpx 5rpx 10rpx #0e0c0d;
   opacity: 0.9;
+  border-radius: 20rpx;
 }
 
 .top {

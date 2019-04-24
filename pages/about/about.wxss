@@ -1,0 +1,54 @@
+.about-list {
+  padding-top: 30rpx;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 280rpx;
+  margin-bottom: 30rpx;
+}
+
+.top {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bottom {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.label {
+  align-self: flex-start;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  color: #918d8d;
+  margin-left: 40rpx;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  color: #918d8d;
+  margin-left: 20rpx;
+}
+
+.desc {
+  font-size: 32rpx;
+  color: #918d8d;
+  margin-left: 40rpx;
+}

@@ -7,8 +7,6 @@
   flex-direction: row;
   width: 90%;
   height: 160rpx;
-  border: 1rpx solid #33333333;
-  box-shadow: 0rpx 5rpx 10rpx #0e0c0d;
   margin-bottom: 30rpx;
 }
 

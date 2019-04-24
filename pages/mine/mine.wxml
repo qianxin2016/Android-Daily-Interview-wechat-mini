@@ -1,6 +1,23 @@
 <view class="container mine">
-  <view>分享给朋友</view>
-  <view>意见与反馈</view>
-  <view>关于作者</view>
-  <view>版本更新历史</view>
+  <view class="top">
+    <image class="image" src="../../images/android.jpg" />
+  </view>
+  <view class="bottom">
+    <view class="underline" >
+      <button plain="true" class="item" style="border: 0" open-type="share">
+        <text class="item-text">分享给朋友</text>
+      </button>
+    </view>
+    <view class="underline">
+      <button plain="true" class="item" style="border: 0" open-type="contact">
+        <text class="item-text">意见与反馈</text>
+      </button>
+    </view>
+    <view class="item underline" bindtap="about">
+      <text class="item-text">关于作者</text>
+    </view>
+    <view class="item" bindtap="history">
+      <text class="item-text">版本更新历史</text>
+    </view>
+  </view>
 </view>

@@ -1,0 +1,34 @@
+<view class="container about-list">
+  <text class="label">GitHub</text>
+  <view class="box about">
+    <view class="top underline">
+      <image class="icon" src="../../images/github.png" />
+      <text class="title">Moosphan</text>
+    </view>
+    <view class="bottom">
+      <text class="desc">小程序数据来源于Moosphan的github项目：https://github.com/Moosphan/Android-Daily-Interview，欢迎一起答题，一起进步～</text>
+    </view>
+  </view>
+
+  <text class="label">公众号</text>
+  <view class="box about">
+    <view class="top underline">
+    <image class="icon" src="../../images/feijiu.png" />
+      <text class="title">飞久</text>
+    </view>
+    <view class="bottom">
+      <text class="desc">在技术的世界里飞久了，停下来，泡一杯咖啡，记录自己的点滴心得</text>
+    </view>
+  </view>
+
+  <text class="label">CSDN</text>
+  <view class="box about">
+    <view class="top underline">
+    <image class="icon" src="../../images/feijiu.png" />
+      <text class="title">飞久</text>
+    </view>
+    <view class="bottom">
+      <text class="desc">Adnroid爱好者、区块链极客https://blog.csdn.net/turkeycock</text>
+    </view>
+  </view>
+</view>

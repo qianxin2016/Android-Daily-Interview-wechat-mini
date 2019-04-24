@@ -8,9 +8,7 @@
 
 .comment {
   width: 100%;
-  border: 1rpx solid #33333333;
   margin-bottom: 40rpx;
-  box-shadow: 0rpx 5rpx 10rpx #0e0c0d;
 }
 
 .top {

@@ -1,6 +1,6 @@
 <view class="container issue-list">
   <view
-    class="issue"
+    class="box issue"
     wx:for="{{issues}}"
     wx:for-item="issue"
     wx:key="{{issue.number}}">

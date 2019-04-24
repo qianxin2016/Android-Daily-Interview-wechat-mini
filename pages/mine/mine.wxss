@@ -6,3 +6,26 @@
   margin-top: 30rpx;
   margin-bottom: 30rpx;
 }
+
+.top {
+  width: 450rpx;
+  height: 450rpx;
+}
+
+.bottom {
+  width: 90%;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 5rpx 10rpx #e6e0e3;
+}
+
+.item {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+}
+
+.item-text {
+  color: #918d8d;
+  font-size: 32rpx;
+}

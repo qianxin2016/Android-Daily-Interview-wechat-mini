@@ -4,7 +4,8 @@
     "pages/issue_details/issue_details",
     "pages/categories/categories",
     "pages/category_details/category_details",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
