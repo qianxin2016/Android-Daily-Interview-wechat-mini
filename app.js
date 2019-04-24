@@ -2,15 +2,20 @@ App({
   onLaunch: function () {
 
   },
-  fetchIssues: function(callback) {
+  fetchIssues: function(page, callback) {
     wx.request({
-      url: this.globalData.GITHUB_URL,
+      url: this.globalData.GITHUB_URL + '?per_page=30&page=' + page,
       method: 'GET',
       success: res => {
-        var issues = []
-        var categories = {}
+        var issues = {...this.globalData.issues}
+        var categories = {...this.globalData.categories}
         for (var i = 0; i < res.data.length; i++) {
-          issues[i] = {
+          // merge newly fetched issues
+          if (issues[res.data[i].number]) {
+            continue
+          }
+
+          issues[res.data[i].number] = {
             number: res.data[i].number,
             time: res.data[i].created_at.substring(0, 10),
             author: res.data[i].user.login,
@@ -25,18 +30,19 @@ App({
             color = labels[0].color
           }
           if (categories[label]) {
-            categories[label].issues.push(issues[i])
+            categories[label].issues.push(issues[res.data[i].number])
           } else {
             categories[label] = {
               label,
               color: '#' + color,
-              issues: [ issues[i] ]
+              issues: [issues[res.data[i].number] ]
             }
           }
         }
 
         this.globalData.issues = issues
         this.globalData.categories = categories
+
         if (callback) {
           callback(issues, categories)
         }
@@ -47,8 +53,8 @@ App({
     })
   },
   globalData: {
-    GITHUB_URL: 'https://api.github.com/repos/Moosphan/Android-Daily-Interview/issues?per_page=20&page=1',
-    issues: [],
+    GITHUB_URL: 'https://api.github.com/repos/Moosphan/Android-Daily-Interview/issues',
+    issues: {},
     categories: {}
   }
 })
